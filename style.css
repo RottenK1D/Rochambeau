@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Baloo+Da+2:wght@500&family=Fira+Code:wght@500&family=Fredoka+One&family=Indie+Flower&family=Press+Start+2P&family=Rubik+Mono+One&family=Secular+One&family=Titan+One&display=swap');
+
+:root {
+    --bg-01: #001219;
+    --text-01: #f1faee;
+
+}
+
+*, ::before, ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    cursor: url(img/mouse-pointer\ \(1\).png), auto;
+}
+
+body {
+    margin: 0 auto;
+    background: var(--bg-01);
+    font-family: 'Fredoka One', cursive;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-width: 32rem;
+    min-height: 32rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+h1{ 
+    padding-top: 6rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3.5rem;
+    color: var(--text-01);
+    position: absolute;
+}
+
+.game-card {
+    display: grid;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: url(img/bg-01.svg); 
+    border-radius: 0.3em;
+    justify-items: center;
+    grid-template-rows: 15em 10em;
+}
+
+.css-cr {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 0.5rem solid;
+    border-color: var(--bg-01);
+    border-radius: 50%;
+}
+
+
+
+button {
+    padding: 0px;
+    line-height: inherit;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: var(--text-01);
+    transform: none;
+}
+
+button:hover{
+    transform: scale(1.1) translateZ(0px);
+    transition: 300ms;
+}
+
+img:hover {
+    transform: scale(1.1) translateZ(0px);
+    transition: 200ms;
+}
+
+.selections {
+   margin-top: 4em;
+   height: 1em;
+
+}
+
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid var(--text-01);
+    color: var(--text-01);
+    font-size: 2.1em;
+    border-radius: .3em;
+    width: 7em;
+    height: 3em;
+    text-align: center;
+    position: relative;
+}
+
+.badge {
+    background: #e63946;
+}
+
+#user {
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    border-radius: .1em;
+}
+#comp {
+    position: absolute;
+    top: 25px;
+    right: -45px;
+    border-radius: .1em;
+}
+
+.score {
+    font-size: 2em;
+    
+}
+
+.result {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-01);
+    font-size: 2.2em;
+    font-weight: 5 00;
+}
+

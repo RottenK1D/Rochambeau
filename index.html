@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Rochambeau</title>
 </head>
 <body>
-    <script>
-       
-    </script>
+    <div class="container-flex">
+        <div class="game-card">
+            <h1 class="game-title">Rock Paper Scissors</h1>
+            <div class="selections">
+                <img class="selection" data-selection="rock" src="img/stone.png" alt="rock">
+                <img class="selection" data-selection="paper" src="img/paper.png" alt="paper">
+                <img class="selection" data-selection="scissors" src="img/scissors.png" alt="scissors">
+            </div>
+            <div class="result">
+                <p class="end-msg">Make your move!</p>
+            </div>
+            <div class="score-board">
+                <div id="user" class="badge">user</div>
+                <div id="comp" class="badge">comp</div>
+                <div class="score">
+                    <span id="user-score" data-user-score>0</span>:<span id="comp-score" data-comp-score>0</span>
+                </div>
+            </div>
+            <div class="css-cr">
+                <button ></button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
